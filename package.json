@@ -1,0 +1,18 @@
+{
+  "name": "fakeshop-react",
+  "version": "1.0.0",
+  "description": "DCi exercise",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "author": "R~G",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
+  }
+}
