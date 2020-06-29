@@ -6,16 +6,37 @@
 }
 
 .navigation {
-    width: 25%;
+    width: 33.6rem;
     height: 100vh;
     background-color: #F6F6F6;
     img {
-        width: 20rem;
+        width: 288px;
+        position: relative;
+        top: 22px;
+        left: 24px;
     }
 }
 
+#search {
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    left: 2.4rem;
+    top: 10.8rem;
+}
+
+.whiteline {
+    width: 21.6rem;
+    height: 0.5px;
+    background-color: white;
+    position: relative;
+    top: 10.36rem;
+    left: 96px;
+}
+
+
 .result {
-    width: 100%;
+    width: auto;
     height: 100vh;
     background-color: #ffffff;
 }
