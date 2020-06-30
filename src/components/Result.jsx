@@ -1,11 +1,21 @@
 import React from 'react';
+import Product from './components/Product';
 
-class Result extends React.Component {
-    render() {
-        return <div className="result">
+export default class Result extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          cart: [],
+          total: 0,
+        };
+      }
 
-        </div>
+      render() {
+        const items = this.props.data.map((item, i) => {
+          return <Product key={i} info={item} />;
+        });
+    
+        return <div className="results">{items}</div>;
+      }
     }
-}
-
-export default Result;
+    

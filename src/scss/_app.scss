@@ -10,9 +10,9 @@
     height: 100vh;
     background-color: #F6F6F6;
     img {
-        width: 288px;
+        width: 217px;
         position: relative;
-        top: 22px;
+        top: 44px;
         left: 24px;
     }
 }
@@ -20,17 +20,17 @@
 #search {
     font-size: 16px;
     font-weight: 500;
-    position: relative;
+    position: absolute;
     left: 2.4rem;
-    top: 10.8rem;
+    top: 18rem;
 }
 
 .whiteline {
     width: 21.6rem;
-    height: 0.5px;
+    height: 1.2px;
     background-color: white;
-    position: relative;
-    top: 10.36rem;
+    position: absolute;
+    top: 194px;
     left: 96px;
 }
 
