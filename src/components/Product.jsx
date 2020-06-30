@@ -7,8 +7,10 @@ const Product = (props) => {
             <div key={id} className="card">
                 <img src={img}></img>
                 <div className="info">
-                    <span className="product-name">{productName}</span><span className="product-price">{price + " €"}</span>
-                    <div className="buttons">
+                    <div className="card-info-product">
+                        <span className="product-name">{productName}</span><span className="product-price">{price + " €"}</span>
+                    </div>
+                    <div className="card-info-buttons">
                         <button className="btn-cart-plus">+</button><span className="product-inventory">{inventory}</span><button className="btn-cart-minus">-</button><button className="btn-to-cart">Add to cart</button>
                      </div>
                 </div>
