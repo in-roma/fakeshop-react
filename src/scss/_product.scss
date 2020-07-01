@@ -3,6 +3,11 @@
     height: 320px;
     display: flex;
     flex-direction: column;
+    box-shadow:
+    0 7.1px 4.1px -73px rgba(0, 0, 0, 0.035),
+    0 57px 33px -73px rgba(0, 0, 0, 0.07)
+  ;
+  
 
 }
 .card img{

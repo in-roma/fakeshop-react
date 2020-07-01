@@ -2,6 +2,7 @@ import React from 'react';
 import Data from './data.json';
 import Nav from './components/Nav';
 import Result from './components/Result';
+import Cart from './components/Cart';
 
 
 class App extends React.Component {
@@ -16,6 +17,7 @@ class App extends React.Component {
         return (
             <div className="page">
                 <Nav />
+                <Cart />
                 <Result data={this.state.data}/>  
             </div>
         );
