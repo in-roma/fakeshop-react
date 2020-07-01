@@ -22,57 +22,83 @@
     }
 }
 
-.cart-button {
-    width: 54px;
-    height: 54px;
+
+.account-button {
+    width:  52px;
+    height:  52px;
     border-radius: 50%;
     position: fixed;
-    top: 20px;
+    top: 24px;
+    right: 94px;
+    z-index: 1;
+    box-shadow:
+    0 3.3px 2.2px -26px rgba(0, 0, 0, 0.014),
+    0 9px 6.1px -26px rgba(0, 0, 0, 0.02),
+    0 21.7px 14.8px -26px rgba(0, 0, 0, 0.026),
+    0 72px 49px -26px rgba(0, 0, 0, 0.04)
+  ;
+    &img{
+        width: 52px;
+        height: 52px;
+    }
+}
+
+.cart-button {
+    width:  52px;
+    height:  52px;
+    border-radius: 50%;
+    position: fixed;
+    top: 24px;
     right: 24px;
     z-index: 1;
     box-shadow:
-    0 3.9px 17px -17px rgba(0, 0, 0, 0.009),
-    0 6px 29.1px -17px rgba(0, 0, 0, 0.018),
-    0 6.6px 37.2px -17px rgba(0, 0, 0, 0.026),
-    0 6.3px 42.1px -17px rgba(0, 0, 0, 0.034),
-    0 5.3px 44.5px -17px rgba(0, 0, 0, 0.043),
-    0 4.2px 44.9px -17px rgba(0, 0, 0, 0.051),
-    0 3.6px 43.9px -17px rgba(0, 0, 0, 0.061),
-    0 4.5px 42.4px -17px rgba(0, 0, 0, 0.072),
-    0 9.3px 41.9px -17px rgba(0, 0, 0, 0.086),
-    0 30px 60px -17px rgba(0, 0, 0, 0.11)
+    0 3.3px 2.2px -26px rgba(0, 0, 0, 0.014),
+    0 9px 6.1px -26px rgba(0, 0, 0, 0.02),
+    0 21.7px 14.8px -26px rgba(0, 0, 0, 0.026),
+    0 72px 49px -26px rgba(0, 0, 0, 0.04)
   ;
-  
-  
     &img{
-        width: 70px;
-        height: 70px;
+        width:  52px;
+        height:  52px;
     }
 }
 
 #search {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     position: absolute;
     left: 2.4rem;
-    top: 18rem;
+    top: 124px;
 }
 
-.whiteline {
-    width: 21.6rem;
-    height: 1.2px;
-    background-color: white;
+.search-input{
+    width: 216px;
+    height: 16px;
+    font-size: 16px;
+    background-color: transparent;
+    text-decoration: none;
     position: absolute;
-    top: 194px;
-    left: 96px;
+    top: 125px;
+    left: 84px;
+    border: none;
+    background-image:none;
+    outline: none;
 }
 
+.white-line-search {
+    width: 216px;
+    height: 1px;
+    position: absolute;
+    top: 140px;
+    left: 84px;
+    background-color: white;
+}
 
 
 .results {
     width: 76%;
     height: auto;
-    margin: 182px 12px 36px 12px;
+    margin: 100px 12px 36px 12px;
     position: absolute;
     left: 24%;
     display: grid;
