@@ -5,7 +5,7 @@ class Nav extends React.Component {
             return <div className="navigation">
                 <img src="./img/logo.png" alt=""/>
                 <span id="search">SEARCH</span>
-                <input type="text" className="search-input" placeholder=""></input>
+                <input type="text" className="search-input" placeholder=""></input><div className="btn-ok">OK</div>
                 <div className="white-line-search"></div>
             </div>
 

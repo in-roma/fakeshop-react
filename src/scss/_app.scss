@@ -86,12 +86,25 @@
 }
 
 .white-line-search {
-    width: 216px;
-    height: 1px;
+    width: 204px;
+    height: 20px;
     position: absolute;
-    top: 140px;
-    left: 84px;
+    top: 123px;
+    left: 86px;
     background-color: white;
+    color: black;
+}
+
+.btn-ok {
+
+    position: absolute;
+    top: 127px;
+    left: 296px;
+    font-weight: 500;
+    border-bottom: 1px black solid;
+    padding-bottom: 0px;
+
+
 }
 
 
