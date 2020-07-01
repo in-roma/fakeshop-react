@@ -7,12 +7,13 @@
 }
 .card img{
     width: 100%;
-    height: auto;
+    height: 240px;
+
 }
 
 .info {
     width: 280px;
-    height: 80px;
+    height: auto;
     background-color:white;
     // border-top: 2px #F1F1F1 solid;
     border: 2px #F1F1F1 solid;
@@ -30,10 +31,12 @@
 
 .card-info-buttons {
     width: 280px;
+    height: auto;
     margin: 12px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    margin-bottom: 14px;
 }
 
 .product-name {
@@ -47,10 +50,30 @@
     font-weight: 500;
 }
 
-.buttons {
-    width: 280px;
+.btn-adding-removing {
+    width: 60px;
+    height: 21px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 14px;
+
 }
 
-.btn-to-cart button {
-    // background-image: url(./img/btn-Add-to-cart.png);
+.btn-to-cart {
+    width: 135px;
+    height: 32px;
+    background-image: url("../assets/btn-Add-to-cart.png");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+button {
+    border: none;
+    background: none;
 }

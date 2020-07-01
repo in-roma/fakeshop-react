@@ -11,7 +11,8 @@ const Product = (props) => {
                         <span className="product-name">{productName}</span><span className="product-price">{price + " €"}</span>
                     </div>
                     <div className="card-info-buttons">
-                        <button className="btn-cart-plus">+</button><span className="product-inventory">{inventory}</span><button className="btn-cart-minus">-</button><button className="btn-to-cart">Add to cart</button>
+                        <div className="btn-adding-removing"> <button className="btn-cart-plus">+</button><span className="product-inventory">{inventory}</span><button className="btn-cart-minus">-</button></div>
+                         <div className="btn-to-cart">Add to cart</div>
                      </div>
                 </div>
             </div>

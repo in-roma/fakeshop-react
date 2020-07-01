@@ -6,8 +6,9 @@
 }
 
 .navigation {
-    width: 33.6rem;
+    width: 24%;
     height: 100vh;
+    position: fixed;
     background-color: #F6F6F6;
     img {
         width: 217px;
@@ -34,18 +35,18 @@
     left: 96px;
 }
 
-.result {
-    width: auto;
-    height: 100vh;
-    background-color: #ffffff;
-}
+
 
 .results {
-    width: 100%;
+    width: 76%;
     height: auto;
+    margin: 24px;
+    position: absolute;
+    left: 24%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 12px;
+    row-gap: 48px;
     // column-gap: 12px;
     justify-items: center;
     align-items: center;
