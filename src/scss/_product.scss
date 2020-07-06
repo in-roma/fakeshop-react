@@ -76,8 +76,15 @@
     justify-content: center;
     align-items: center;
     font-size: 12px;
+    &:hover {
+    background-image: url("../assets/btn-Add-to-cart-hover.svg");
+    color: white;
+    }
+    &:active {
+        background-image: url("../assets/btn-Add-to-cart.svg");
+        color: white;
+        }
 }
-
 button {
     border: none;
     background: none;

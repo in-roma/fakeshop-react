@@ -1,0 +1,114 @@
+
+.card-background {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    position: fixed;
+}
+
+
+.cart-window {
+    width: 1008px;
+    height: 80%;
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+    top: 100px;
+    opacity: 1;
+    left: 50%;
+    transform: translate(-50%,0); 
+    // border: 1px black solid;   
+    // clip-path: polygon(05% 0%, 100% 0%, 95% 100%, 0% 100%);
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr .5fr ;
+    grid-template-rows: repeat(16, 12px);
+    row-gap: 12px;
+    padding: 24px;
+    column-gap: 12px;
+    justify-items: center;
+    align-items: center;
+    //  border-left: 12px #FCE333 solid;
+
+    h1 {
+        grid-column: 1 / 6;
+        grid-row: 1/4;
+        font-size: 34px;
+
+        font-weight: 600;
+        margin: 24px 0px 24px 24px;
+        justify-self: self-start;
+    }
+    span {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    .results {
+        width: auto;
+        height: auto;
+        grid-column: 3/6;
+        grid-row: 4/5;
+        background-color: green($color: #000000);
+    }
+}
+
+#close-window {
+    font-size:10px;
+    grid-row: 1/4;
+    grid-column: 5/6;
+    justify-self: self-end;
+    text-decoration: underline;
+    color: black;
+    
+
+}
+
+
+#cart-total {
+    font-size: 28px;
+    font-weight: 500;
+    grid-column: 2/3;
+    grid-row: end;
+}
+
+#cart-quantity-sum {
+    font-size: 28px;
+    grid-column: 3/4;
+    font-weight: 500;
+    grid-row: end;
+}
+
+
+#cart-total-sum {
+    font-size: 28px;
+    grid-column: 4/5;
+    font-weight: 500;
+    grid-row: end;
+} 
+
+.btn-order {
+    width: 135px;
+    height: 32px;
+    grid-column: 5/6;
+    grid-row: end;
+    background-image: url("../assets/btn-Add-to-cart.png");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    &:hover {
+    background-image: url("../assets/btn-Add-to-cart-hover.svg");
+    color: white;
+    }
+    &:active {
+        background-image: url("../assets/btn-Add-to-cart.svg");
+        color: white;
+        }
+}
+button {
+    border: none;
+    background: none;
+}

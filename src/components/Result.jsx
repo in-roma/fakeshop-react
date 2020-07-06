@@ -1,5 +1,6 @@
 import React from 'react';
 import Product from './Product';
+import { Link } from 'react';
 
 export default class Result extends React.Component {
     constructor(props) {
