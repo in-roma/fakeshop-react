@@ -9,10 +9,16 @@ export default class Result extends React.Component {
           total: 0,
         };
       }
+      addToCart = (item) => {
+        this.setState({
+          cart: [...this.state.cart, item],
+        });
+        console.log(this.state.cart);
+      };
 
       render() {
         const items = this.props.data.map((item, i) => {
-          return <Product key={i} info={item} />;
+          return <Product key={i} info={item} OnClick={this.addToCart}/>;
         });
     
         return <div className="results">{items}</div>;
