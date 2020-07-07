@@ -1,6 +1,6 @@
 .login-window {
     width: 504px;
-    height: auto;
+    height: 340px;
     background-color: white;
     z-index: 1;
     position: fixed;
@@ -9,16 +9,16 @@
     left: 50%;
     transform: translate(-50%,0); 
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    row-gap: 6px;
+    grid-template-columns: repeat(8fr, 1fr) ;
+    grid-template-rows: repeat(4fr, 48px) .5fr;
+    row-gap: 12px;
     padding: 24px;
-    column-gap: 6px;
+    column-gap: 12px;
     justify-items: center;
     align-items: center;
 
     h1 {
-        grid-column: 1 / 2;
+        grid-column: 1 / 4;
         grid-row: 1/2;
         font-size: 34px;
         font-weight: 600;
@@ -26,16 +26,17 @@
         justify-self: start;
     }
     #close-window-login {
-        font-size:10px;
-        grid-column: 4/5;
+        font-size: 10px;
+        grid-column: 7/9;
         grid-row: 1/2;
         justify-self: self-end;
+        align-self: center;
         text-decoration: underline;
         color: black;
 
     }
     #email {
-        grid-column: 1 / 1;
+        grid-column: 1 / 2;
         grid-row: 2/3;
         font-size: 12px;
         font-weight: 500;
@@ -43,7 +44,7 @@
     }
 
     .email-input {
-        grid-column: 2 / 5;
+        grid-column: 2 / 9;
         grid-row: 2/3;
         font-size: 12px;
         font-weight: 500;
@@ -54,7 +55,7 @@
     }
 
     #password {
-        grid-column: 1 / 1;
+        grid-column: 1 / 2;
         grid-row: 3/4;
         font-size: 12px;
         font-weight: 500;
@@ -62,7 +63,7 @@
     }
 
     .password-input {
-        grid-column: 2 / 5;
+        grid-column: 2 / 9;
         grid-row: 3/4;
         font-size: 12px;
         font-weight: 500;
@@ -77,8 +78,9 @@
 .btn-login {
     width: 135px;
     height: 32px;
-    grid-column: 4/5;
+    grid-column: 7/9;
     grid-row: 4/5;
+    justify-self: end;
     background-image: url("../assets/btn-Add-to-cart.png");
     background-repeat: no-repeat;
     display: flex;
@@ -103,9 +105,10 @@ button {
 
 
 #forgot-password {
-    grid-column: 4/5;
+    grid-column: 6/9;
     grid-row: 5/6;
     font-size: 12px;
     font-weight: 500;
     text-decoration: underline;
+    justify-self: end;
 }
