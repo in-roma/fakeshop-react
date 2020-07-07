@@ -12,9 +12,30 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-          data: Data
+          data: Data,
+          cartItems: [ {  
+          "id": 2,
+          "productName": "Product 2",
+          "img": "./img/002.png",
+          "price": 20,
+          "inventory": 0},
+          {  
+            "id": 2,
+            "productName": "Product 2",
+            "img": "./img/002.png",
+            "price": 20,
+            "inventory": 0}
+        ]
         };
     }
+    addToCart = (id) => {
+        let cart = this.state.data.find(item => item.id === id)
+        this.setState({...this.state, cartItems: [...this.state.cartItems, cart]});
+        console.log(cart);
+      };
+
+
+
 
     render() {
         return (
@@ -25,11 +46,11 @@ class App extends React.Component {
                 <Link to="/cart"><img className="cart-button" src="./img/cart-icon.svg"></img></Link>
             </div>
             <Nav />
-            <Result data={this.state.data}/>  
+            <Result data={this.state.data} addToCart={this.addToCart}/>  
             </div>
             <Switch>
                 <Route path="/" exact component={Home}></Route>
-                <Route path="/cart" exact component={Cart}></Route>
+                <Route path="/cart" exact component={() => <Cart cartItems={this.state.cartItems} />}></Route>
                 <Route path="/login" exact component={Login}></Route>
             </Switch>
             </Router>
