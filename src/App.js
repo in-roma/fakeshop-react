@@ -13,28 +13,58 @@ class App extends React.Component {
         super(props);
         this.state = {
           data: Data,
-          cartItems: [ {  
-          "id": 2,
-          "productName": "Product 2",
-          "img": "./img/002.png",
-          "price": 20,
-          "inventory": 0},
-          {  
-            "id": 2,
-            "productName": "Product 2",
-            "img": "./img/002.png",
-            "price": 20,
-            "inventory": 0}
-        ]
+          total: 0,
+          cartItems: [ 
+        //     {  
+        //   "id": 2,
+        //   "productName": "Product 2",
+        //   "img": "./img/002.png",
+        //   "price": 20,
+        //   "quantity": 0},
+        //   {  
+        //     "id": 2,
+        //     "productName": "Product 2",
+        //     "img": "./img/002.png",
+        //     "price": 20,
+        //     "quantity": 0
+        // }
+        ], 
         };
     }
     addToCart = (id) => {
         let cart = this.state.data.find(item => item.id === id)
         this.setState({...this.state, cartItems: [...this.state.cartItems, cart]});
         console.log(cart);
+        let total = this.state.cartItems.reduce((acc, red) => acc + red.price, this.state.total);
+        console.log(total);
+        this.setState({total: total});
       };
 
+    delete = (id) => {
+        let cart = this.state.cartItems.filter(item => item.id !== id)
+        this.setState({...this.state, cartItems: cart});
+        console.log(id);
+      };
 
+    adding = (id) => {
+        let addingItem = this.state.data.map(item => {
+            if (item.id === id) {
+              item.quantity++
+            }
+            return item;
+            })
+            console.log(addingItem);
+            this.setState({...this.state, data: addingItem});
+        }
+    removing = (id) => {
+            let removingItem = this.state.data.map(item => {
+                if (item.id === id) {
+                  item.quantity--
+                }
+                return item;
+                })
+                this.setState({...this.state, data: removingItem});
+            }
 
 
     render() {
@@ -46,11 +76,11 @@ class App extends React.Component {
                 <Link to="/cart"><img className="cart-button" src="./img/cart-icon.svg"></img></Link>
             </div>
             <Nav />
-            <Result data={this.state.data} addToCart={this.addToCart}/>  
+            <Result data={this.state.data} addToCart={this.addToCart} adding={this.adding} removing={this.removing}/>  
             </div>
             <Switch>
                 <Route path="/" exact component={Home}></Route>
-                <Route path="/cart" exact component={() => <Cart cartItems={this.state.cartItems} />}></Route>
+                <Route path="/cart" exact component={() => <Cart cartItems={this.state.cartItems} delete={this.delete}/>}></Route>
                 <Route path="/login" exact component={Login}></Route>
             </Switch>
             </Router>

@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CartItem from './CartItem';
 
-const Cart = (props) => {
-   
-    const items = props.cartItems.map((item, i) => {
-        return <CartItem key={i} info={item}/>;
+export default class Cart extends React.Component{
+  
+    render() {
+    const items = this.props.cartItems.map((item, i) => {
+        return <CartItem key={i} info={item} delete={this.props.delete}/>;
       });
 
             return (
@@ -14,7 +15,7 @@ const Cart = (props) => {
                  <Link to="/"><div className="card-background"></div></Link>
                 <div className="cart-window">
                     <h1>MY CART</h1> <Link id="close-window" to="/"><span>Close Window</span></Link>
-                    <span className="cart-productName">PRODUCT</span><span className="cart-price">PRICE</span><span className="cart-quantity">QUY</span><span className="total">TOTAL</span><span className="delete"></span>
+                    <span className="cart-productName">PRODUCT</span><span className="cart-price">PRICE</span><span className="cart-quantity">QUY</span><span className="total">TOTAL</span><span className="delete" ></span>
                     <div className="cart-results">{items}</div>;
                     <div className="total-line"></div>
                     <span id="cart-total">TOTAL</span><span id="cart-quantity-sum">000</span><span id="cart-total-sum">00.00€</span>
@@ -26,12 +27,6 @@ const Cart = (props) => {
 
     }
 
-
-export default Cart; 
-
-
-
-
-
+}
 
         

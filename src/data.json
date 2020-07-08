@@ -4,69 +4,79 @@
         "productName": "Product 0",
         "img": "./img/000.png",
         "price": 10,
-        "inventory": 0
+        "quantity": 1,
+        "total": 0
     },
     {
         "id": 1,
         "productName": "Product 1",
         "img": "./img/001.png",
         "price": 10,
-        "inventory": 0
+        "quantity": 1,
+        "total": 0
     },
     {
         "id": 2,
         "productName": "Product 2",
         "img": "./img/002.png",
         "price": 20,
-        "inventory": 0
+        "quantity": 1,
+        "total": 0
     },
     {
         "id": 3,
         "productName": "Product 3",
         "img": "./img/003.png",
         "price": 20,
-        "inventory": 0
+        "quantity": 1,
+        "total": 0
     },
     {
         "id": 4,
         "productName": "Product 4",
         "img": "./img/002.png",
         "price": 10,
-        "inventory": 0
+        "quantity": 1,
+        "total": 0
     },
     {
         "id": 5,
         "productName": "Product 5",
         "img": "./img/001.png",
         "price": 20,
-        "inventory": 0
+        "quantity": 1,
+        "total": 0
     },
     {
         "id": 6,
         "productName": "Product 6",
         "img": "./img/000.png",
         "price": 20,
-        "inventory": 0
+        "quantity": 1,
+        "total": 0
     },
     {
         "id": 7,
         "productName": "Product 7",
         "img": "./img/002.png",
         "price": 10,
-        "inventory": 0
+        "quantity": 1,
+        "total": 0
     },
     {
         "id": 8,
         "productName": "Product 8",
         "img": "./img/003.png",
         "price": 20,
-        "inventory": 0
+        "quantity": 1,
+        "total": 0
     },
     {
         "id": 9,
         "productName": "Product 9",
         "img": "./img/000.png",
         "price": 20,
-        "inventory": 0
+        "quantity": 1,
+        "total": 0
     }
 ]
