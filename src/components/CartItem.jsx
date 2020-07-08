@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CartItem = (props) => {
-    const { id, productName, img, price, quantity } = props.info;
+    const { id, productName, img, price, quantity, totalItem } = props.info;
 
     return (
 
@@ -10,6 +10,7 @@ const CartItem = (props) => {
                 <span className="cart-item-product-name">{productName} </span>
                 <span className="cart-item-product-price">{price + " €"} </span>
                 <span className="cart-item-product-quantity">{quantity} </span>
+                <span className="cart-item-product-totalItem">{totalItem + ".00€"} </span>
                 <div className="btn-delete" onClick={() => props.delete(id)} key={id}></div>
                 </React.Fragment>
     );

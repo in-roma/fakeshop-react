@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Product = (props) => {
-    const { id, productName, img, price, quantity } = props.info;
+    const { id, productName, img, price, quantity, totalItem } = props.info;
 
     return (
             <div key={id} className="card">

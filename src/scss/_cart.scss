@@ -115,6 +115,12 @@
     transform: translateX(-30px);
 }
 
+.cart-item-product-totalItem{
+    grid-column: 8 / 9;
+    justify-self: center;
+    align-self: center;
+    transform: translateX(-36px);
+}
 
 .btn-delete {
     grid-column: 9 / 10;

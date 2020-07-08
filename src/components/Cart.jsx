@@ -5,7 +5,9 @@ import CartItem from './CartItem';
 export default class Cart extends React.Component{
   
     render() {
-    const items = this.props.cartItems.map((item, i) => {
+        const total = this.props.total;
+        const totalQuantity = this.props.totalQuantity;
+        const items = this.props.cartItems.map((item, i) => {
         return <CartItem key={i} info={item} delete={this.props.delete}/>;
       });
 
@@ -18,7 +20,7 @@ export default class Cart extends React.Component{
                     <span className="cart-productName">PRODUCT</span><span className="cart-price">PRICE</span><span className="cart-quantity">QUY</span><span className="total">TOTAL</span><span className="delete" ></span>
                     <div className="cart-results">{items}</div>;
                     <div className="total-line"></div>
-                    <span id="cart-total">TOTAL</span><span id="cart-quantity-sum">000</span><span id="cart-total-sum">00.00€</span>
+            <span id="cart-total">TOTAL</span><span id="cart-quantity-sum">{totalQuantity}</span><span id="cart-total-sum">{total + "€"}</span>
                     <div className="btn-order">Order</div>
 
                 </div>
