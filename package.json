@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "DCi exercise",
   "main": "index.js",
-  "homepage": "http://Romain-Grandjean.github.io/fakeshop-react",
+  "homepage": "http://romain-grandjean.github.io/fakeshop-react",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
