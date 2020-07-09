@@ -1,9 +1,9 @@
 {
   "name": "fakeshop-react",
   "version": "1.0.0",
-  "description": "DCi exercise",
+  "description": "",
   "main": "index.js",
-  "homepage": "http://romain-grandjean.github.io/fakeshop-react",
+  "homepage": "http://Romain-Grandjean.github.io/fakeshop-react",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
