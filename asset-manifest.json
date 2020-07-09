@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/fakeshop-react/static/css/main.19ee55f1.chunk.css",
+    "main.js": "/fakeshop-react/static/js/main.ecca7c1e.chunk.js",
+    "main.js.map": "/fakeshop-react/static/js/main.ecca7c1e.chunk.js.map",
+    "runtime-main.js": "/fakeshop-react/static/js/runtime-main.bdf996ad.js",
+    "runtime-main.js.map": "/fakeshop-react/static/js/runtime-main.bdf996ad.js.map",
+    "static/js/2.ecfd5f9a.chunk.js": "/fakeshop-react/static/js/2.ecfd5f9a.chunk.js",
+    "static/js/2.ecfd5f9a.chunk.js.map": "/fakeshop-react/static/js/2.ecfd5f9a.chunk.js.map",
+    "index.html": "/fakeshop-react/index.html",
+    "precache-manifest.8f9ba40860b9e9c1c0653a154e723e73.js": "/fakeshop-react/precache-manifest.8f9ba40860b9e9c1c0653a154e723e73.js",
+    "service-worker.js": "/fakeshop-react/service-worker.js",
+    "static/css/main.19ee55f1.chunk.css.map": "/fakeshop-react/static/css/main.19ee55f1.chunk.css.map",
+    "static/js/2.ecfd5f9a.chunk.js.LICENSE.txt": "/fakeshop-react/static/js/2.ecfd5f9a.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/fakeshop-react/static/media/btn-delete-small-bw.ad2fe406.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bdf996ad.js",
+    "static/js/2.ecfd5f9a.chunk.js",
+    "static/css/main.19ee55f1.chunk.css",
+    "static/js/main.ecca7c1e.chunk.js"
+  ]
+}
