@@ -7,7 +7,6 @@ import Cart from './components/Cart';
 import Login from './components/Login';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -23,14 +22,6 @@ class App extends React.Component {
         this.setState({...this.state, cartItems: [...this.state.cartItems, cart]});
         let itemQuantities = this.state.cartItems.reduce((acc, red) => acc + red.quantity, this.state.totalQuantity);
         this.setState({...this.state.totalQuantity, totalQuantity: itemQuantities});
-        
-        let totalItem = this.state.cartItems.forEach(item => {
-            if (item.id === id) {
-            return item.price * item.quantity
-            }
-            })
-            console.log(totalItem);
-            this.setState({...this.state.cartItems.totalItem, totalItem: totalItem});
     };
 
     delete = (id) => {
@@ -38,7 +29,6 @@ class App extends React.Component {
         this.setState({...this.state, cartItems: cart});
         let total = this.state.cartItems.reduce((acc, red) => acc + red.totalItem, this.state.total);
         this.setState({...this.state.total, total: total});
-
     };
 
     cartTotal = () => {
@@ -65,7 +55,6 @@ class App extends React.Component {
                 })
                 this.setState({...this.state, data: removingItem});
             }
-
 
     render() {
         return (

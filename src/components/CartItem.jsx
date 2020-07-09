@@ -10,7 +10,7 @@ const CartItem = (props) => {
                 <span className="cart-item-product-name">{productName} </span>
                 <span className="cart-item-product-price">{price + " €"} </span>
                 <span className="cart-item-product-quantity">{quantity} </span>
-                <span className="cart-item-product-totalItem">{totalItem + ".00€"} </span>
+                <span className="cart-item-product-totalItem">{price *  quantity + ".00€"} </span>
                 <div className="btn-delete" onClick={() => props.delete(id)} key={id}></div>
                 </React.Fragment>
     );
