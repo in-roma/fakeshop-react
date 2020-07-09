@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.9e8af8c9.chunk.css",
-    "main.js": "/static/js/main.d771ff6e.chunk.js",
-    "main.js.map": "/static/js/main.d771ff6e.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ce9fff9c.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ce9fff9c.js.map",
-    "static/js/2.48e751bf.chunk.js": "/static/js/2.48e751bf.chunk.js",
-    "static/js/2.48e751bf.chunk.js.map": "/static/js/2.48e751bf.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.eb6b3ec223ffc362a0e96f2d4db4c599.js": "/precache-manifest.eb6b3ec223ffc362a0e96f2d4db4c599.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.9e8af8c9.chunk.css.map": "/static/css/main.9e8af8c9.chunk.css.map",
-    "static/js/2.48e751bf.chunk.js.LICENSE.txt": "/static/js/2.48e751bf.chunk.js.LICENSE.txt",
-    "static/media/main.scss": "/static/media/btn-Add-to-cart.4c2faa86.svg"
+    "main.css": "/fakeshop-react/static/css/main.19ee55f1.chunk.css",
+    "main.js": "/fakeshop-react/static/js/main.ecca7c1e.chunk.js",
+    "main.js.map": "/fakeshop-react/static/js/main.ecca7c1e.chunk.js.map",
+    "runtime-main.js": "/fakeshop-react/static/js/runtime-main.bdf996ad.js",
+    "runtime-main.js.map": "/fakeshop-react/static/js/runtime-main.bdf996ad.js.map",
+    "static/js/2.ecfd5f9a.chunk.js": "/fakeshop-react/static/js/2.ecfd5f9a.chunk.js",
+    "static/js/2.ecfd5f9a.chunk.js.map": "/fakeshop-react/static/js/2.ecfd5f9a.chunk.js.map",
+    "index.html": "/fakeshop-react/index.html",
+    "precache-manifest.8f9ba40860b9e9c1c0653a154e723e73.js": "/fakeshop-react/precache-manifest.8f9ba40860b9e9c1c0653a154e723e73.js",
+    "service-worker.js": "/fakeshop-react/service-worker.js",
+    "static/css/main.19ee55f1.chunk.css.map": "/fakeshop-react/static/css/main.19ee55f1.chunk.css.map",
+    "static/js/2.ecfd5f9a.chunk.js.LICENSE.txt": "/fakeshop-react/static/js/2.ecfd5f9a.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/fakeshop-react/static/media/btn-delete-small-bw.ad2fe406.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ce9fff9c.js",
-    "static/js/2.48e751bf.chunk.js",
-    "static/css/main.9e8af8c9.chunk.css",
-    "static/js/main.d771ff6e.chunk.js"
+    "static/js/runtime-main.bdf996ad.js",
+    "static/js/2.ecfd5f9a.chunk.js",
+    "static/css/main.19ee55f1.chunk.css",
+    "static/js/main.ecca7c1e.chunk.js"
   ]
 }
