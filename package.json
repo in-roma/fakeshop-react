@@ -1,7 +1,7 @@
 {
   "name": "fakeshop-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "DCi exercise",
   "main": "index.js",
   "homepage": "http://Romain-Grandjean.github.io/fakeshop-react",
   "scripts": {
@@ -35,3 +35,4 @@
     "gh-pages": "^3.1.0"
   }
 }
+

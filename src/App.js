@@ -19,8 +19,7 @@ class App extends React.Component {
     }
     addToCart = (id) => {
         let cart = this.state.data.find(item => item.id === id)
-        let itemQuantities = this.state.cartItems.reduce((acc, red) => acc + red.quantity, this.state.totalQuantity);
-        this.setState({...this.state, cartItems: [...this.state.cartItems, cart], totalQuantity: itemQuantities});
+        this.setState({...this.state, cartItems: [...this.state.cartItems, cart]});
     };
 
     delete = (id) => {
@@ -32,7 +31,6 @@ class App extends React.Component {
         }, 0);
         console.log(cart, total, "these are cart & total");
         this.setState({...this.state, cartItems: cart, total: total});
-
     };
 
     cartTotal = () => {

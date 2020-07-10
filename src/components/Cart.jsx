@@ -20,7 +20,7 @@ export default class Cart extends React.Component{
                     <span className="cart-productName">PRODUCT</span><span className="cart-price">PRICE</span><span className="cart-quantity">QUY</span><span className="total">TOTAL</span><span className="delete" ></span>
                     <div className="cart-results">{items}</div>;
                     <div className="total-line"></div>
-            <span id="cart-total">TOTAL</span><span id="cart-quantity-sum">{totalQuantity}</span><span id="cart-total-sum">{total + "€"}</span>
+            <span id="cart-total">TOTAL</span><span id="cart-total-sum">{total + ".00€"}</span>
                     <div className="btn-order">Order</div>
 
                 </div>
