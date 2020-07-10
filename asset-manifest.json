@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/fakeshop-react/static/css/main.19ee55f1.chunk.css",
-    "main.js": "/fakeshop-react/static/js/main.5e1d9804.chunk.js",
-    "main.js.map": "/fakeshop-react/static/js/main.5e1d9804.chunk.js.map",
+    "main.css": "/fakeshop-react/static/css/main.f0506964.chunk.css",
+    "main.js": "/fakeshop-react/static/js/main.e13e9b16.chunk.js",
+    "main.js.map": "/fakeshop-react/static/js/main.e13e9b16.chunk.js.map",
     "runtime-main.js": "/fakeshop-react/static/js/runtime-main.bdf996ad.js",
     "runtime-main.js.map": "/fakeshop-react/static/js/runtime-main.bdf996ad.js.map",
     "static/js/2.258dd368.chunk.js": "/fakeshop-react/static/js/2.258dd368.chunk.js",
     "static/js/2.258dd368.chunk.js.map": "/fakeshop-react/static/js/2.258dd368.chunk.js.map",
     "index.html": "/fakeshop-react/index.html",
-    "precache-manifest.9c30fd54a1a0e2e08b7ac15e84e2de45.js": "/fakeshop-react/precache-manifest.9c30fd54a1a0e2e08b7ac15e84e2de45.js",
+    "precache-manifest.1b344b5f710c66bf0b477cef2697157f.js": "/fakeshop-react/precache-manifest.1b344b5f710c66bf0b477cef2697157f.js",
     "service-worker.js": "/fakeshop-react/service-worker.js",
-    "static/css/main.19ee55f1.chunk.css.map": "/fakeshop-react/static/css/main.19ee55f1.chunk.css.map",
+    "static/css/main.f0506964.chunk.css.map": "/fakeshop-react/static/css/main.f0506964.chunk.css.map",
     "static/js/2.258dd368.chunk.js.LICENSE.txt": "/fakeshop-react/static/js/2.258dd368.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/fakeshop-react/static/media/btn-delete-small-bw.ad2fe406.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.bdf996ad.js",
     "static/js/2.258dd368.chunk.js",
-    "static/css/main.19ee55f1.chunk.css",
-    "static/js/main.5e1d9804.chunk.js"
+    "static/css/main.f0506964.chunk.css",
+    "static/js/main.e13e9b16.chunk.js"
   ]
 }
