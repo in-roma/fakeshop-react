@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cd7a1568883e0429ee3fa7b5478f3d53",
+    "revision": "0e62a563029358920996b3a2ff57618a",
     "url": "/fakeshop-react/index.html"
   },
   {
-    "revision": "1028830d1ea4911cd64f",
-    "url": "/fakeshop-react/static/css/main.19ee55f1.chunk.css"
+    "revision": "a7a4cbe99b4cd2b1a166",
+    "url": "/fakeshop-react/static/css/main.7e38fdfc.chunk.css"
   },
   {
-    "revision": "46e375588950a6e6d778",
-    "url": "/fakeshop-react/static/js/2.ecfd5f9a.chunk.js"
+    "revision": "5c59459172e28fa4882b",
+    "url": "/fakeshop-react/static/js/2.258dd368.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/fakeshop-react/static/js/2.ecfd5f9a.chunk.js.LICENSE.txt"
+    "url": "/fakeshop-react/static/js/2.258dd368.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1028830d1ea4911cd64f",
-    "url": "/fakeshop-react/static/js/main.ecca7c1e.chunk.js"
+    "revision": "a7a4cbe99b4cd2b1a166",
+    "url": "/fakeshop-react/static/js/main.34e6fd20.chunk.js"
   },
   {
     "revision": "dda0cbb59d9abf211b82",
