@@ -6,7 +6,7 @@ const CartItem = (props) => {
     return (
 
                 <React.Fragment>
-                <img src={img} className="cart-item-img"></img>
+                <img src={process.env.PUBLIC_URL + '/img/' + img} className="cart-item-img"></img>
                 <span className="cart-item-product-name">{productName} </span>
                 <span className="cart-item-product-price">{price + " €"} </span>
                 <span className="cart-item-product-quantity">{quantity} </span>

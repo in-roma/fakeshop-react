@@ -19,20 +19,24 @@ class App extends React.Component {
     }
     addToCart = (id) => {
         let cart = this.state.data.find(item => item.id === id)
-        this.setState({...this.state, cartItems: [...this.state.cartItems, cart]});
         let itemQuantities = this.state.cartItems.reduce((acc, red) => acc + red.quantity, this.state.totalQuantity);
-        this.setState({...this.state.totalQuantity, totalQuantity: itemQuantities});
+        this.setState({...this.state, cartItems: [...this.state.cartItems, cart], totalQuantity: itemQuantities});
     };
 
     delete = (id) => {
+        console.log(this.state.total, "=total");
         let cart = this.state.cartItems.filter(item => item.id !== id)
-        this.setState({...this.state, cartItems: cart});
-        let total = this.state.cartItems.reduce((acc, red) => acc + red.totalItem, this.state.total);
-        this.setState({...this.state.total, total: total});
+        let total = cart.reduce((acc, red) => {
+            acc = acc + red.price * red.quantity
+            return acc;
+        }, 0);
+        console.log(cart, total, "these are cart & total");
+        this.setState({...this.state, cartItems: cart, total: total});
+
     };
 
     cartTotal = () => {
-        let total = this.state.cartItems.reduce((acc, red) => acc + red.totalItem, this.state.total);
+        let total = this.state.cartItems.reduce((acc, red) => acc + red.price * red.quantity, this.state.total);
         this.setState({...this.state.total, total: total});
     }
 
@@ -43,7 +47,6 @@ class App extends React.Component {
             }
             return item;
             })
-            console.log(addingItem);
             this.setState({...this.state, data: addingItem});
         }
     removing = (id) => {
@@ -61,7 +64,7 @@ class App extends React.Component {
             <Router>
             <div className="page">
             <div className="menu">
-                <Link to="/login"><img className="account-button" src="./img/accout-icon.svg"></img></Link>
+                <Link to="/login"><img className="account-button" src="{process.env.PUBLIC_URL + '/img/accout-icon.svg}"></img></Link>
                 <Link to="/cart"><img className="cart-button" src="./img/cart-icon.svg" onClick={this.cartTotal} ></img></Link>
             </div>
             <Nav />

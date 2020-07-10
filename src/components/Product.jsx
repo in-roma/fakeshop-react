@@ -5,7 +5,7 @@ const Product = (props) => {
 
     return (
             <div key={id} className="card">
-                <img src={img}></img>
+                <img src={process.env.PUBLIC_URL + '/img/' +img}></img>
                 <div className="info">
                     <div className="card-info-product">
                         <span className="product-name">{productName}</span><span className="product-price">{price + " €"}</span>
