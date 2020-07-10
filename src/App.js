@@ -64,8 +64,9 @@ class App extends React.Component {
             <Router>
             <div className="page">
             <div className="menu">
-                <Link to="/login"><img className="account-button" src="{process.env.PUBLIC_URL + '/img/accout-icon.svg}"></img></Link>
-                <Link to="/cart"><img className="cart-button" src="./img/cart-icon.svg" onClick={this.cartTotal} ></img></Link>
+                <Link to="/login"><img className="account-button" src={process.env.PUBLIC_URL + "/img/accout-icon.svg"}></img></Link>
+                
+                <Link to="/cart"><img className="cart-button" src={process.env.PUBLIC_URL + "/img/cart-icon.svg"} onClick={this.cartTotal} ></img></Link>
             </div>
             <Nav />
             <Result data={this.state.data} addToCart={this.addToCart} adding={this.adding} removing={this.removing}/>  
