@@ -1,2 +1,2 @@
 # fakeshop-react
-DCi exercise - Create a webshop with React
+DCi exercise - Webshop page with React
