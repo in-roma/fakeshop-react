@@ -1,2 +1,2 @@
 # fakeshop-react
-DCi exercise - [Webshop page with React](https://in-roma.github.io/fakeshop-react/)
+DCi exercise - [Webshop page using React](https://in-roma.github.io/fakeshop-react/)
